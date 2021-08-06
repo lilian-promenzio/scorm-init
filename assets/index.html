@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<style>
+			html,
+			body {
+				height: 100%;
+				overflow: hidden;
+			}
+
+			.demo-iframe-holder {
+				position: fixed;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				top: 0;
+				-webkit-overflow-scrolling: touch;
+				overflow-y: auto;
+			}
+
+			.demo-iframe-holder iframe {
+				height: 100%;
+				width: 100%;
+			}
+
+			@supports not (-webkit-overflow-scrolling: touch) {
+				.demo-iframe-holder {
+					overflow: hidden;
+				}
+
+				.demo-iframe-holder iframe {
+					border: none;
+				}
+			}
+		</style>
+		<title>{{cursoTitulo}}</title>
+	</head>
+
+	<body>
+		<div class="demo-iframe-holder">
+			<iframe src="main.html"></iframe>
+		</div>
+	</body>
+</html>
